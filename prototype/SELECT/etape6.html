@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data</title>
+</head>
+<p>Afficher les articles archivés de l'utilisateur 'id=100';</p>
+<h1>SELECT *
+    FROM article
+    WHERE id_utilisateur = 100
+    AND status = 'brouillon';</h1>
+<body>
+<table border=1>
+<tr>
+<td bgcolor=silver class='medium'>id_article</td>
+<td bgcolor=silver class='medium'>titre</td>
+<td bgcolor=silver class='medium'>contenu</td>
+<td bgcolor=silver class='medium'>date_publication</td>
+<td bgcolor=silver class='medium'>status</td>
+<td bgcolor=silver class='medium'>id_utilisateur</td>
+<td bgcolor=silver class='medium'>id_categorie</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>156</td>
+<td class='normal' valign='top'>MySQL</td>
+<td class='normal' valign='top'>Avancé</td>
+<td class='normal' valign='top'>2025-02-05</td>
+<td class='normal' valign='top'>brouillon</td>
+<td class='normal' valign='top'>100</td>
+<td class='normal' valign='top'>1</td>
+</tr>
+</table>
+</body></html>

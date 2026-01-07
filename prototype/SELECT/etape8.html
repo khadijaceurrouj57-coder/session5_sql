@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data</title>
+</head>
+<p>Combien d'article ont été publié par mois dans l'année 2025;</p>
+<h1>SELECT MONTH(date_publication) AS mois, COUNT(*) AS total
+    FROM article
+    WHERE YEAR(date_publication) = 2025
+    AND status = 'publié'
+    GROUP BY MONTH(date_publication);</h1>
+<body>
+<table border=1>
+<tr>
+<td bgcolor=silver class='medium'>mois</td>
+<td bgcolor=silver class='medium'>total</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>1</td>
+<td class='normal' valign='top'>1</td>
+</tr>
+</table>
+</body></html>
